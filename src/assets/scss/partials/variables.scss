@@ -1,0 +1,183 @@
+// fonts size
+$heading-font-size: 32px;
+$title-font-size: 24px;
+$title-paragraph-size: 16px;
+$card-body-font-size: 14px;
+
+// primary colors
+$primary-white: #ffffff;
+$primary-grey: #303c42;
+$primary-black: #1e1b1d;
+// secondary colors
+$secondary-yellow: #fcd60b;
+$secondary-blue: #569bb4;
+$secondary-grey: #5f646a;
+// others
+$input-border: #909090;
+$plus-btn: #595d5f;
+$light-grey: #8D8D8D;
+$very-light-grey: #ccc;
+$summary-background: #e7e7e7;
+$filter-background: #F4F4F4;
+
+// gradients
+$primary-gradient: linear-gradient(
+  180deg,
+  #f9d429 0%,
+  #f9d429 27.99%,
+  rgba(213, 217, 84, 0.612879) 55.21%,
+  rgba(157, 225, 151, 0) 98.3%,
+  rgba(114, 114, 114, 0) 98.31%
+);
+
+.navbar {
+  background: $primary-white!important;
+  .navbar-toggler{
+    margin-right: 26px;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .search-box{
+    width: 35%;
+  }
+  .nav-pills {
+    .nav-item {
+      .nav-link {
+        font-size: $card-body-font-size;
+        color: $primary-black;
+        &.active {
+          color: $primary-black;
+          background-color: $secondary-yellow;
+        }
+      }
+      .nav-link:hover{
+        color: $primary-black;
+        background-color: $secondary-yellow;
+      }
+    }
+  }
+}
+
+.form-control,
+.form-select {
+  border: 1px solid $primary-grey !important;
+  // min-width: 40px !important;
+  min-height: 34px !important;
+}
+.card {
+  padding: 10px;
+  border: none !important;
+  box-shadow: 0px 0px 6px #ccc !important;
+  border-radius: 4px !important ;
+}
+
+.btn-primary{
+    color: $primary-white !important;
+    background-color: $primary-grey !important;
+    height: 32px !important;
+    min-width: 113px !important;
+    border: none !important;
+    padding-left: 18px!important;
+    padding-right: 18px!important;
+}
+
+.btn-secondary {
+    color: $primary-white !important;
+    background-color: $secondary-grey !important;
+    // height: 32px !important;
+    min-width: 113px !important;
+    border: none !important;
+    padding-left: 18px!important;
+    padding-right: 18px!important;
+}
+
+.btn-primary:hover, .btn-light:hover, .btn-secondary:hover{
+  color: $primary-black !important;
+  background-color: $secondary-yellow !important;
+}
+
+.btn-primary:focus, .btn-light:focus, .btn-secondary:focus, .form-control:focus,
+.form-select:focus {
+  box-shadow: none !important;
+ 
+}
+
+.btn-light {
+  background-color: transparent!important;
+  border: 1px solid $primary-grey !important;
+  color:$primary-grey !important ;
+  min-width: 113px !important;
+  line-height: 1.2 !important;
+  padding-left: 18px!important;
+  padding-right: 18px!important;
+  padding-top: .375rem!important;
+  padding-bottom: .2rem!important;
+}
+
+.table > thead {
+  height: 57px !important;
+  background-color: $primary-grey !important;
+  color: $primary-white !important;
+  // vertical-align: unset!important;
+  line-height: 2!important;
+}
+
+thead, tbody, tfoot, tr, td, th {
+  min-width: 180px!important;
+  vertical-align: middle !important;
+}
+
+.react-datepicker__input-container {
+  input{
+    border: 1px solid $primary-grey !important;
+  }
+}
+
+.pagination {
+  margin-bottom: 0 !important;
+  li{
+    margin: 0 10px !important;
+    a{
+      border: 1px solid $very-light-grey;
+      height: 38px;
+      width: 38px;
+      border-radius:50% !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-black!important;
+    }
+    
+    &.previous,&.next {
+      a{
+        border: none;
+      }
+    } 
+    &.selected {
+      a{
+        background-color: $secondary-grey !important;
+        color: $primary-white !important;
+      }
+    }
+    a:hover{
+      color: $primary-black !important;
+      background-color: $secondary-yellow !important;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    &.extended{
+      border-bottom:1px solid #ccc;
+    }
+    .navbar-collapse{
+      padding: 4px 26px;
+    }
+    .search-box{
+     margin-top: 8px;
+    }
+  }
+}

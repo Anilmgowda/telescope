@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  frontend:
+    build:
+      context: .
+      args:
+        ENVIRONMENT: ${ENVIRONMENT}
+        BASE_URL: ${BASE_URL}
+        PORT: ${PORT}
+    ports:
+      - "${PORT}:${PORT}"
+    image: app:react
+    
+   

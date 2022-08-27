@@ -1,0 +1,154 @@
+@import "../../assets/scss/partials/variables.scss";
+
+.lightGrey {
+  color: $light-grey;
+}
+.primaryGrey {
+  color: $primary-grey;
+}
+
+.filter {
+  background: #e7e7e7;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.singleLineTxt {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.top-margin {
+  margin-top: 32px!important;
+}
+.typeAhead { 
+  input {
+    z-index: unset!important;
+  }
+  input::placeholder{
+    color: black;
+  }
+  
+}
+
+.react-datepicker__input-container {
+  input {
+    height: 34px !important;
+    border-radius: 5px !important;
+    padding-left: 12px !important;
+  }
+}
+
+.custom-card-style:hover {
+  box-shadow: 0 0 20px #aaa !important;
+  cursor: pointer;
+}
+
+.iconClass {
+  position: absolute;
+  right: 12px;
+  margin-top: -26px;
+  pointer-events: none;
+}
+
+.custom-table {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .table-header {
+    display: flex;
+    flex-direction: row;
+    background-color: $secondary-grey !important;
+    color: $primary-white !important;
+    padding: 8px 24px;
+    & > li {
+      flex: 1;
+      padding: 6px 12px;
+      text-align: left;
+      &:nth-child(1) {
+        flex: 2;
+      }
+      &:nth-child(2) {
+        flex: 2;
+      }
+      &:nth-child(3) {
+        flex: 6;
+      }
+      &:nth-child(4) {
+        flex: 3;
+      }
+
+      &:nth-child(5) {
+        flex: 2;
+      }
+      &:nth-child(6) {
+        flex: 2;
+      }
+    }
+  }
+
+  .table-body {
+    // display: flex;
+    // flex-direction: row;
+    & > li {
+      display: flex;
+      flex-direction: row;
+      //   border-bottom: 1px solid $very-light-gray;
+      padding: 8px 24px;
+      align-items: start;
+      text-align: left;
+      & > div {
+        flex: 1;
+        padding: 6px 12px;
+        &:nth-child(1) {
+          flex: 2;
+        }
+        &:nth-child(2) {
+          flex: 2;
+        }
+        &:nth-child(3) {
+          flex: 6;
+        }
+        &:nth-child(4) {
+          flex: 3;
+        }
+
+        &:nth-child(5) {
+          flex: 2;
+        }
+        &:nth-child(6) {
+          flex: 2;
+        }
+      }
+      &:nth-child(even) {
+        background-color: #eeefef;
+      }
+    }
+    & > li:hover {
+      box-shadow: 0 0 20px #aaa !important;
+      cursor: pointer;
+    }
+  }
+}
+
+.custom-modal {
+  .custom-modal-header {
+    .btn-close {
+      border: 2px solid $primary-black;
+      border-radius: 50%;
+      font-size: 12px;
+      margin-right: 2px;
+      opacity: 1;
+      padding: 4px;
+    }
+  }
+  .custom-modal-body {
+    max-height: 320px;
+    overflow-y: scroll;
+  }
+  .custom-modal-footer {
+    display: block !important;
+  }
+}

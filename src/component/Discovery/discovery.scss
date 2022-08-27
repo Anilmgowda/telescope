@@ -1,0 +1,39 @@
+@import '../../assets/scss/partials/variables.scss';
+
+.filter {
+    background: $summary-background;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.summaryBox {
+    background-color: $summary-background;
+    padding: 14px 24px;
+}
+.filter-box {
+    background-color: $filter-background;
+    padding:1rem .5rem;
+    border-radius: 5px;
+}
+
+.iconboxcircle {
+    width: 40px!important;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $primary-white;
+    color: $primary-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $primary-black;
+    // svg {
+    //   fill: $primary-white !important;
+    // }
+  }
+  .iconboxcircle:hover{
+    background-color: $secondary-yellow !important;
+    svg {
+      fill: $primary-black !important;
+    }
+  }
+

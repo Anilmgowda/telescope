@@ -1,0 +1,36 @@
+image: ruby:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+
+stages:
+    - staging
+    - production
+
+staging:
+    stage: staging
+    before_script:
+      - gem install dpl
+    script:
+        - dpl --provider=heroku --app=$HEROKU_APP_STAGING --api_key=$HEROKU_AUTH_TOKEN
+    environment:
+      name: staging
+      url: https://orionui-dev.herokuapp.com/
+    only:
+        - dev
+    
+production:
+    stage: production
+    before_script:
+      - gem install dpl
+    script:
+        - dpl --provider=heroku --app=$HEROKU_APP_STAGING --api_key=$HEROKU_AUTH_TOKEN
+    environment:
+      name: production
+      url: https://orionui-prod.herokuapp.com/
+    only:
+        - prod
+    

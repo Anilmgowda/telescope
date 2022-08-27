@@ -1,0 +1,28 @@
+@import '../../assets/scss/partials/variables.scss';
+.app {
+  .anchor-box {
+      font-family: 'Hoefler-Regular';
+      font-size: $title-font-size;
+      width: 440px;
+      height: 64px;
+      background-color: $primary-white;
+      border: 2px solid $primary-black !important;
+      border-radius: 5px;
+      color: $primary-black !important;
+      margin-top: 30px;
+      cursor: pointer;
+    a {
+      color: $primary-black !important;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%!important;
+      height: 100%!important;
+    }
+  }
+  .anchor-box:hover {
+    background-color: $secondary-yellow;
+    color: $primary-black !important;
+  }
+}

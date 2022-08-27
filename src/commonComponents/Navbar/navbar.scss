@@ -1,0 +1,22 @@
+@import "../../assets/scss/partials/variables.scss";
+.search-bar:hover {
+  box-shadow: 3px 3px 3px #b6b6b6;
+}
+.filterBox {
+  padding: 4px 16px;
+  .filterItem {
+    cursor: pointer;
+    margin-right: 16px;
+    border: 1px solid;
+    padding: 2px 12px;
+    border-radius: 4px;
+    background-color:$primary-white;
+    color: $primary-black; 
+    margin-bottom: 8px;
+    &.active {
+      background-color:$secondary-yellow;
+      color: $primary-black; 
+    }
+  }
+}
+
